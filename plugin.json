@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sim-plugin",
+  "version": "0.1.0",
+  "description": "Apply SIM conversation principles to preserve provenance, unknowns, authored decisions, and semantic boundaries.",
+  "author": {
+    "name": "hexbrick.tech"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "SIM Conversation",
+        "shortDescription": "SIM-aware conversations",
+        "longDescription": "Apply SIM conversation principles while preserving the distinction between observation, authored content, model-derived content, interpretation, and unknowns.",
+        "developerName": "hexbrick.tech",
+        "category": "Productivity",
+        "capabilities": ["Interactive"],
+        "defaultPrompt": [
+          "Use SIM conversation principles in this chat.",
+          "Review this conversation using OAMIU provenance distinctions.",
+          "Keep unknowns and interpretations from becoming facts."
+        ]
+      }
+    }
+  }
+}
