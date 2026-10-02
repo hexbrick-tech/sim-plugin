@@ -24,5 +24,13 @@ SIM Conversation Specification
 The initial implementation target is OpenAI. The common specification does not
 depend on any LLM platform.
 
+The first OpenAI projection is provided as a skills-only portable plugin:
+
+- `plugin.json`
+- `skills/sim-conversation/SKILL.md`
+
+The skill is an adapter projection of the common conversation semantics; it is
+not the normative SIM specification itself.
+
 See [the conversation specification](docs/conversation-spec.md) and
 [OAMIU notes](docs/oamiu.md).
